@@ -9,3 +9,7 @@
 @media(max-width:380px){.hero h1{font-size:58px}.hero-actions .inline-link{font-size:10px}.rating-score{font-size:75px}.rating-score span{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 .skip-link{position:fixed;top:-80px;left:20px;z-index:100;background:var(--orange);color:var(--ink);padding:14px 18px;font-weight:800}.skip-link:focus{top:12px}html{color-scheme:dark}a,summary{touch-action:manipulation}h1,h2{text-wrap:balance}.hero-image img{transform:scale(1.12)}.gallery-one img{transform:scale(1.12)}.gallery-one:hover img{transform:scale(1.16)}section[id],main[id]{scroll-margin-top:24px}
+.instagram-nav{border-left:1px solid #ffffff66;padding-left:clamp(12px,1.2vw,22px);color:var(--orange)}.hero-image img{transform:none;object-position:center 42%}.gallery-one img{transform:none;object-position:center 46%}.gallery-one:hover img{transform:scale(1.04)}.gallery-three img{object-position:center 38%}
+@media(max-width:1180px){.nav{display:none}.menu{display:block}}
+@media(max-width:760px){.hero-image{inset:0 0 40%}.hero-image img{object-position:center 82%}.hero-overlay{background:linear-gradient(0deg,#0b0c0c 13%,#0b0c0c 32%,#0b0c0ce0 48%,#0b0c0c38 73%,#0b0c0c90 100%)}}
+.header-cta{background:#0b0c0cd9}
