@@ -13,3 +13,4 @@
 @media(max-width:1180px){.nav{display:none}.menu{display:block}}
 @media(max-width:760px){.hero-image{inset:0 0 40%}.hero-image img{object-position:center 82%}.hero-overlay{background:linear-gradient(0deg,#0b0c0c 13%,#0b0c0c 32%,#0b0c0ce0 48%,#0b0c0c38 73%,#0b0c0c90 100%)}}
 .header-cta{background:#0b0c0cd9}
+.gallery-two img{object-position:30% center}

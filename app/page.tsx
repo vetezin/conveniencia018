@@ -36,9 +36,39 @@ export default function Home() {
       </section>
       <div className="marquee" aria-hidden="true">ZERO18 <b>✦</b> SUA CONVENIÊNCIA NO MARACANÃ <b>✦</b> ZERO18 <b>✦</b> SUA CONVENIÊNCIA NO MARACANÃ <b>✦</b></div>
       <section className="intro section wrap" id="zero18"><Kicker number="01">A ZERO18</Kicker><div className="intro-grid"><h2>O PONTO DE<br /><em>PARTIDA</em> DO<br />SEU ROLÊ.</h2><div className="intro-copy"><p>Tem lugar que combina com o momento. Na Zero18, você encontra bebidas para escolher com calma, levar pro encontro e brindar do seu jeito.</p><p>Uma conveniência de bairro com energia de quem sabe que toda boa história começa em algum lugar.</p><a href={zero18.instagramUrl} target="_blank" rel="noopener noreferrer" className="lined-link">Acompanhe no Instagram ↗</a></div></div></section>
-      <section className="drinks" id="bebidas"><div className="drinks-image"><Image src="/zero18/beefeater-zero18.png" alt="Garrafas de gin Beefeater na Zero18" fill sizes="(max-width: 760px) 100vw, 52vw" /></div><div className="drinks-body"><Kicker number="02">O QUE VOCÊ ENCONTRA</Kicker><h2>PRA<br />BRINDAR.<br /><em>PRA LEVAR.</em></h2><p>Cervejas, gin, destilados e bebidas para acompanhar seus planos.</p><div className="drink-list"><span>CERVEJAS</span><span>GIN</span><span>DESTILADOS</span><span>COPÃO</span></div><Route className="lined-link">Passe na Zero18</Route></div></section>
+      <section className="drinks" id="bebidas">
+        <div className="drinks-image">
+          <Image src="/zero18/destilados-zero18.png" alt="Arte da Zero18 com uma seleção de destilados" fill sizes="(max-width: 760px) 100vw, 52vw" />
+        </div>
+        <div className="drinks-body">
+          <Kicker number="02">O QUE VOCÊ ENCONTRA</Kicker>
+          <h2>PRA<br />BRINDAR.<br /><em>PRA LEVAR.</em></h2>
+          <p>Cervejas, gin, destilados e bebidas para acompanhar seus planos.</p>
+          <div className="drink-list"><span>CERVEJAS</span><span>GIN</span><span>DESTILADOS</span><span>COPÃO</span></div>
+          <Route className="lined-link">Passe na Zero18</Route>
+        </div>
+      </section>
       <section className="copao section wrap" aria-labelledby="copao-title"><Kicker number="03">UM CLÁSSICO DA CASA</Kicker><div className="copao-grid"><div className="copao-body"><h2 id="copao-title">COPÃO<br /><em>É AQUI!</em></h2><p>O encontro tem endereço. O copão também.</p><Route className="button dark">Encontrar a Zero18</Route></div><div className="copao-image"><Image src="/zero18/copao-zero18.png" alt="Arte oficial da Zero18: Copão é aqui!" fill sizes="(max-width: 760px) 100vw, 48vw" /></div></div></section>
-      <section className="gallery section wrap" id="galeria"><div className="gallery-heading"><div><Kicker number="04">POR DENTRO DA ZERO18</Kicker><h2>O CLIMA<br /><em>É NOSSO.</em></h2></div><p>Da escolha da bebida à parada antes de sair: a Zero18 faz parte do caminho.</p></div><div className="gallery-grid"><figure className="gallery-one"><Image src="/zero18/fachada-capa-zero18.webp" alt="Fachada da Zero18 ao entardecer" fill sizes="(max-width: 760px) 100vw, 50vw" /><figcaption>01 / SUA PARADA</figcaption></figure><figure className="gallery-two"><Image src="/zero18/beefeater-zero18.png" alt="Seleção de gins na Zero18" fill sizes="(max-width: 760px) 100vw, 30vw" /><figcaption>02 / SUA ESCOLHA</figcaption></figure><figure className="gallery-three"><Image src="/zero18/copao-zero18.png" alt="Arte oficial da Zero18: Copão é aqui!" fill sizes="(max-width: 760px) 100vw, 48vw" /><figcaption>03 / COPÃO É AQUI</figcaption></figure></div></section>
+      <section className="gallery section wrap" id="galeria">
+        <div className="gallery-heading">
+          <div><Kicker number="04">A ZERO18 EM IMAGENS</Kicker><h2>O CLIMA<br /><em>É NOSSO.</em></h2></div>
+          <p>Da escolha da bebida à parada antes de sair: a Zero18 faz parte do caminho.</p>
+        </div>
+        <div className="gallery-grid">
+          <figure className="gallery-one">
+            <Image src="/zero18/fachada-capa-zero18.webp" alt="Fachada da Zero18 ao entardecer" fill sizes="(max-width: 760px) 100vw, 50vw" />
+            <figcaption>01 / A LOJA</figcaption>
+          </figure>
+          <figure className="gallery-two">
+            <Image src="/zero18/ballena-zero18.png" alt="Arte da Zero18 com bebida Ballena sabor morango" fill sizes="(max-width: 760px) 100vw, 30vw" />
+            <figcaption>02 / BEBIDAS</figcaption>
+          </figure>
+          <figure className="gallery-three">
+            <Image src="/zero18/beefeater-zero18.png" alt="Garrafas de gin Beefeater na Zero18" fill sizes="(max-width: 760px) 100vw, 48vw" />
+            <figcaption>03 / GIN</figcaption>
+          </figure>
+        </div>
+      </section>
       <section className="rating wrap" aria-label="Avaliação no Google"><div className="rating-score">{zero18.rating.toLocaleString("pt-BR", { minimumFractionDigits: 1 })}<span>★★★★★</span></div><div><strong>BEM AVALIADA NO GOOGLE.</strong><p>Nota {zero18.rating.toLocaleString("pt-BR", { minimumFractionDigits: 1 })} em {zero18.reviewCount} avaliações da Conveniência Zero18.</p></div><Route className="lined-link">Ver no Google Maps</Route></section>
       <section className="location section wrap" id="localizacao"><div className="location-body"><Kicker number="05">ONDE NOS ENCONTRAR</Kicker><h2>SEU PONTO<br />NO <em>JARDIM<br />MARACANÃ.</em></h2><address><strong>{zero18.street}</strong><br />{zero18.neighborhood}<br />{zero18.city} – SP · CEP {zero18.postalCode}</address><Route className="button orange">Traçar rota</Route></div><div className="location-aside"><div className="location-image"><Image src="/zero18/fachada-zero18.png" alt="Fachada da Zero18 na Rua Júlio Peruche" fill sizes="(max-width: 760px) 100vw, 42vw" /></div><Route className="map-bar">Ver no Google Maps</Route></div></section>
       <section className="hours section wrap"><div><Kicker number="06">PLANEJE SUA VISITA</Kicker><h2>QUANDO<br /><em>PASSAR.</em></h2></div><div className="hours-list">{zero18.hours.map(item => <div className="hour" key={item.day}><span>{item.day}</span><strong>{item.time}</strong></div>)}<p>Horários consultados no Google. Confira antes de sair.</p></div></section>
