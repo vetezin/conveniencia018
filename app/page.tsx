@@ -29,7 +29,7 @@ export default function Home() {
     </header>
     <main id="conteudo">
       <section className="hero" id="inicio" aria-labelledby="hero-title">
-        <div className="hero-image"><Image src="/zero18/fachada-capa-zero18.webp" alt="Fachada da Conveniência Zero18 ao entardecer" fill priority sizes="(max-width: 760px) 100vw, 58vw" /></div>
+        <div className="hero-image"><Image src="/zero18/fachada-entrada-zero18.png" alt="Fachada da Conveniência Zero18 em um dia de céu azul" fill priority sizes="(max-width: 760px) 100vw, 58vw" /></div>
         <div className="hero-overlay"></div>
         <div className="hero-body wrap"><p className="hero-kicker"><i></i> PRESIDENTE PRUDENTE · SP</p><h1 id="hero-title">SUA PARADA<br />ANTES DO<br /><em>ROLÊ.</em></h1><p className="hero-description">Bebida gelada, encontro marcado e o clima certo pra começar. A Zero18 espera por você no Jardim Maracanã.</p><div className="hero-actions"><Route className="button orange" /><a href="#zero18" className="inline-link">Conheça a Zero18 <span aria-hidden="true">↓</span></a></div></div>
         <span className="hero-vertical" aria-hidden="true">CONVENIÊNCIA · BEBIDAS · ENCONTRO</span><span className="hero-index" aria-hidden="true">01 / ZERO18</span>
