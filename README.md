@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Conveniência Zero18
 
-## Getting Started
+Landing page da Conveniência Zero18, criada com Next.js 16 (App Router), React 19, TypeScript e CSS/Tailwind 4.
 
-First, run the development server:
+## Executar
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Validar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
+```
 
-## Learn More
+O script de build usa Webpack por compatibilidade com o ambiente Windows usado durante a criação.
 
-To learn more about Next.js, take a look at the following resources:
+## Conteúdo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Dados comerciais e links: `data/zero18.ts`
+- Página: `app/page.tsx`
+- Estilos responsivos: `app/globals.css`
+- Fotos e arte oficiais enviados pelo usuário: `public/zero18/`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Endereço, horários e avaliação foram conferidos no [perfil da empresa no Google](https://www.google.com/search?kgmid=/g/11vrb0x8ck&q=Conveni%C3%AAncia+Zero18) em 5 de outubro de 2026. Reconfirme esses dados periodicamente. As imagens da marca devem ser publicadas com autorização da Zero18.
