@@ -43,9 +43,9 @@ h1 em, h2 em { font-style: normal; color: var(--orange); }
 .menu { display: none; position: relative; }
 
 .hero { position: relative; display: flex; align-items: center; height: min(800px, 100svh); min-height: 630px; overflow: hidden; background: var(--ink); }
-.hero-image { position: absolute; inset: 0 0 0 40%; }
+.hero-image { position: absolute; inset: 0; }
 .hero-image img { object-fit: cover; object-position: center 42%; }
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, #0b0c0c 5%, #0b0c0cf5 33%, #0b0c0c85 58%, #0b0c0c00 84%), linear-gradient(0deg, #0b0c0c80, transparent 28%); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, #0b0c0ce0 0%, #0b0c0cb8 28%, #0b0c0c59 58%, #0b0c0c0d 84%), linear-gradient(0deg, #0b0c0c80, transparent 28%); }
 .hero-body { position: relative; z-index: 1; width: 100%; padding-top: 80px; }
 .hero .eyebrow { margin-bottom: 28px; }
 .hero h1 { max-width: 850px; margin-bottom: 26px; font-size: clamp(76px, 8.8vw, 146px); line-height: .88; }
@@ -102,9 +102,8 @@ h1 em, h2 em { font-style: normal; color: var(--orange); }
   .brand img { width: 42px; height: 42px; }
   .header-cta { display: none; }
   .hero { height: 760px; min-height: 670px; max-height: 940px; align-items: end; }
-  .hero-image { inset: 0 0 36%; }
-  .hero-image img { object-position: center 80%; }
-  .hero-overlay { background: linear-gradient(0deg, #0b0c0c 12%, #0b0c0c 31%, #0b0c0ce0 48%, #0b0c0c42 73%, #0b0c0c88 100%); }
+  .hero-image img { object-position: center 50%; }
+  .hero-overlay { background: linear-gradient(0deg, #0b0c0cef 3%, #0b0c0cd6 38%, #0b0c0c52 72%, #0b0c0c85 100%); }
   .hero-body { padding-top: 0; padding-bottom: 76px; }
   .hero .eyebrow { font-size: 9px; margin-bottom: 18px; }
   .hero h1 { font-size: clamp(64px, 15vw, 95px); margin-bottom: 18px; }
