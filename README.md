@@ -21,6 +21,23 @@ npm run build
 
 O script de build usa Webpack por compatibilidade com o ambiente Windows usado durante a criação.
 
+## Publicação
+
+Site: https://vetezin.github.io/conveniencia018/
+
+A publicação acontece pelo workflow em `.github/workflows/pages.yml` após cada push na branch `main`. No GitHub, a origem de publicação em Settings → Pages deve ser **GitHub Actions**.
+
+Para gerar a mesma versão estática no PowerShell:
+
+```powershell
+$env:GITHUB_PAGES = "true"
+$env:NEXT_PUBLIC_BASE_PATH = "/conveniencia018"
+npm run build
+Remove-Item Env:GITHUB_PAGES, Env:NEXT_PUBLIC_BASE_PATH
+```
+
+O resultado fica em `out/`. Os caminhos das imagens usam `data/assets.ts` para funcionar tanto no Pages quanto no desenvolvimento em localhost:3000.
+
 ## Conteúdo
 
 - Dados comerciais e links: `data/zero18.ts`

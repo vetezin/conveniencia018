@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/data/assets";
 import { MobileMenu } from "./mobile-menu";
 import { zero18 } from "@/data/zero18";
 
@@ -45,7 +46,7 @@ export default function Home() {
 
       <header className="header">
         <a className="brand" href="#inicio" aria-label="Zero18, início">
-          <Image src="/zero18/logo-zero18.png" alt="" width={48} height={48} priority />
+          <Image src={assetPath("/zero18/logo-zero18.png")} alt="" width={48} height={48} priority />
           <span>ZERO<b>18</b></span>
         </a>
         <nav className="nav" aria-label="Navegação principal">
@@ -61,7 +62,7 @@ export default function Home() {
         <section className="hero" id="inicio" aria-labelledby="hero-title">
           <div className="hero-image">
             <Image
-              src="/zero18/fachada-entrada-zero18.png"
+              src={assetPath("/zero18/fachada-entrada-zero18.png")}
               alt="Fachada da Conveniência Zero18 sob céu azul"
               fill
               priority
@@ -90,15 +91,15 @@ export default function Home() {
           </div>
           <div className="offer-grid">
             <figure className="offer-card">
-              <div className="offer-image"><Image src="/zero18/destilados-zero18.png" alt="Arte da Zero18 com uma seleção de destilados" fill sizes="(max-width: 680px) 100vw, 33vw" /></div>
+              <div className="offer-image"><Image src={assetPath("/zero18/destilados-zero18.png")} alt="Arte da Zero18 com uma seleção de destilados" fill sizes="(max-width: 680px) 100vw, 33vw" /></div>
               <figcaption>Destilados e gin</figcaption>
             </figure>
             <figure className="offer-card">
-              <div className="offer-image"><Image src="/zero18/copao-zero18.png" alt="Arte oficial da Zero18 com um copão" fill sizes="(max-width: 680px) 100vw, 33vw" /></div>
+              <div className="offer-image"><Image src={assetPath("/zero18/copao-zero18.png")} alt="Arte oficial da Zero18 com um copão" fill sizes="(max-width: 680px) 100vw, 33vw" /></div>
               <figcaption>Copão</figcaption>
             </figure>
             <figure className="offer-card">
-              <div className="offer-image"><Image src="/zero18/ballena-zero18.png" alt="Arte da Zero18 com bebida Ballena sabor morango" fill sizes="(max-width: 680px) 100vw, 33vw" /></div>
+              <div className="offer-image"><Image src={assetPath("/zero18/ballena-zero18.png")} alt="Arte da Zero18 com bebida Ballena sabor morango" fill sizes="(max-width: 680px) 100vw, 33vw" /></div>
               <figcaption>Sabores pra escolher</figcaption>
             </figure>
           </div>
@@ -124,14 +125,14 @@ export default function Home() {
             <ExternalLink className="button dark" href={zero18.mapsUrl}>Traçar rota</ExternalLink>
           </div>
           <div className="visit-image">
-            <Image src="/zero18/fachada-capa-zero18.webp" alt="Fachada da Zero18 ao entardecer" fill sizes="(max-width: 760px) 100vw, 42vw" />
+            <Image src={assetPath("/zero18/fachada-capa-zero18.webp")} alt="Fachada da Zero18 ao entardecer" fill sizes="(max-width: 760px) 100vw, 42vw" />
           </div>
         </section>
       </main>
 
       <footer className="footer wrap">
         <a className="footer-brand" href="#inicio" aria-label="Zero18, voltar ao início">
-          <Image src="/zero18/logo-zero18.png" alt="" width={52} height={52} loading="eager" />
+          <Image src={assetPath("/zero18/logo-zero18.png")} alt="" width={52} height={52} loading="eager" />
           <span>ZERO18</span>
         </a>
         <p>Sua conveniência no Jardim Maracanã.<br />Presidente Prudente · SP</p>

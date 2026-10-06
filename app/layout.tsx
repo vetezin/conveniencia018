@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { assetPath } from "@/data/assets";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     type: "website",
   },
-  icons: { icon: "/zero18/logo-zero18.png", apple: "/zero18/logo-zero18.png" },
+  icons: { icon: assetPath("/zero18/logo-zero18.png"), apple: assetPath("/zero18/logo-zero18.png") },
 };
 
 export const viewport: Viewport = { themeColor: "#0b0c0c" };
